@@ -1,0 +1,52 @@
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 33%;
+    padding: 1px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Table attributes */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+html {
+    height: 100%;
+    color: gray;
+    line-height: 1.8;
+}
+
+/* Color of clickable text if mouse is on it */
+a:hover {
+    color: hotpink;
+}
+
+/* Spacing */
+.w3-wide {
+    letter-spacing: 10px;
+}
+
+/* Pointer hover opacity */
+.w3-hover-opacity {
+    cursor: pointer;
+}

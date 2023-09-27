@@ -1,0 +1,195 @@
+<!-- 
+File: index.html 
+GUI Assignment:  Creating Your First Web Page 
+Will Shahbazian, UMass Lowell Computer Science, will_shahbazian@student.uml.edu 
+Copyright (c) 2023 by Will.  All rights reserved.  May be freely copied or 
+excerpted for educational purposes with credit to the author. 
+I had experience using HTML prior to this class. All new concepts were found on W3 schools.
+updated by WS on September 26, 2023 at 11:30 PM -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/99e29c7e6d.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <title>Will Shahbazian</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <!-- The welcome message, and section titles/buttons -->
+    <h1>Welcome to my website!</h1>
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+                href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="#home" class="w3-bar-item w3-button">HOME</a>
+            <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+        </div>
+
+    </div>
+    <!-- Home Portion of the site. The "Home" and "to the top" buttons lead here. -->
+    <div class="bgimg-3 w3-display-container w3-opacity-min" id="home">
+        <div class="w3-display-topmiddle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> <span
+                    class="w3-hide-small">Will</span> Shahbazian</span>
+        </div>
+    </div>
+    <!-- The Biography Portion of the site. The "about" button leads here. -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center">ABOUT ME</h3>
+        <p>
+            I am a senior CS major at UMass Lowell. I identify as a male (&male;). I graduated from
+            Andover High School, in the class of 2020. After immigrating to the United States from South Korea at
+            the age of six months, I lived in Somerville, MA until I started Kindergarten. I then moved to Andover,
+            where I reside today. For most of my life, I wasn't into coding, but I've always had an interest in
+            technology and how things work. But during sophomore year of highschool, I took a Minecraft programming
+            class and was instantly hooked. Some of my hobbies are long-distance running, playing video games,
+            attending sporting events, and watching movies. When I was in high school, I was a captain of the cross
+            country and track teams. I try to attend as many of the UML sports games as possible, and try to go to
+            see a handful of Boston teams play each year as well. I love the Star Wars and Marvel franchises, and
+            have watched nearly every movie and TV show in each.
+            <br> <br>My work experience consists of three years of being a summer camp counselor, two years of
+            statistics work for a track and field website, and a summer Software Engineer internship at Raytheon.
+
+        </p>
+
+        <!-- Photos of me to go with the written bio. -->
+        <div class="row">
+            <div class="column">
+                <img src="img/Grad.JPG" alt="Graduation" style="width:100%">
+
+            </div>
+            <div class="column">
+                <img src="img/Lu.jpg" alt="Me and my roommate" style="width:100%">
+
+            </div>
+            <div class="column">
+                <img src="img/Finish.jpg" alt="Me winning a 5K Race" style="width:100%">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Container (Portfolio Section), button links to "MY WORK" -->
+    <div class="w3-content w3-container" id="portfolio">
+        <h3 class="w3-center">MY WORK</h3>
+        <p class="w3-center">
+            <em>View the source code for my projects on <a href="https://github.com/Shahbazian-Will"
+                    title="Github">Github.</a></em> <br> <br>This page will likely be updated throughout the
+            semester with the homeworks from GUI 1. For now, it is mostly some old personal projects, mainly from my
+            time in high school.
+
+            <!-- Table of my projects on Github. -->
+        <table>
+            <tr>
+                <th>Project Title</th>
+                <th>Langauge</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Yahtzee</td>
+                <td>Java</td>
+                <td>GUI Yahtzee Game</td>
+            </tr>
+            <tr>
+                <td>MC Quick Build</td>
+                <td>Python</td>
+                <td>Automatically builds a structure in the game Minecraft</td>
+            </tr>
+            <tr>
+                <td>GUI HW1</td>
+                <td>HTML</td>
+                <td>The site you're on right now!</td>
+            </tr>
+
+        </table>
+        <!-- Images of my projects. -->
+        <div class="row">
+            <div class="column">
+                <img src="img/Yahtzee.png" alt="Yahtzee" style="width:100%">
+
+            </div>
+            <div class="column">
+                <img src="img/MC.png" alt="MC Pillar" style="width:100%">
+
+            </div>
+            <div class="column">
+                <img src="img/Website.png" alt="Screenshot of this site" style="width:100%">
+
+            </div>
+        </div>
+    </div>
+    <!-- Container (Contact Section), contact button leads here. -->
+    <div class="w3-content w3-container " id="contact">
+        <h3 class="w3-center">CONTACT</h3>
+        <table>
+            <tr>
+                <th>Form of Contact</th>
+                <th>Label</th>
+                <th>Info</th>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td>Cell</td>
+                <td>617-599-8488</td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td>Home</td>
+                <td>978-409-2560</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>Personal</td>
+                <td><a href="mailto:willshahbazian@gmail.com">willshahbazian@gmail.com</a></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>School</td>
+                <td><a href="mailto:will_shahbazian@student.uml.edu">will_shahbazian@student.uml.edu</a></td>
+            </tr>
+            <tr>
+                <td>Mailing Address</td>
+                <td>Home</td>
+                <td>8 Pioneer Circle, Andover MA 01810</td>
+            </tr>
+            <tr>
+                <td>Mailing Address</td>
+                <td>School</td>
+                <td>100 Pawtucket Street, UMass Lowell USR 206C, Lowell, MA 01854-3630</td>
+            </tr>
+
+        </table>
+
+    </div>
+    <!-- Footer containing social media links, validation icon, and a button to go back to the "home" -->
+    <footer class="w3-center w3-blue w3-padding-64 w3-opacity w3-hover-opacity-off">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <div class="w3-xlarge w3-section">
+            Social Media Links:
+            <a href="https://www.facebook.com/will.shahbazian" title="Facebook"><i
+                    class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/willshahbazian/" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://snapchat.com/add/willshahbazian" title="Snapchat"><i
+                    class="fab fa-snapchat-square"></i></a>
+            <a href="https://twitter.com/willshahbazian" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/will-shahbazian-52a252171/" title="linkedin"><i
+                    class="fab fa-linkedin"></i></a>
+        </div>
+        <p>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss"
+                    alt="Valid CSS!" />
+            </a>
+        </p>
+
+    </footer>
+</body> <!-- <script src="script.js"></script> -->
+
+</html>
